@@ -1,0 +1,103 @@
+.NoteForm {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.NoteForm__header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 14px;
+}
+
+.NoteForm__heading {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.NoteForm__metaText {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.NoteForm__form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.Field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.Field__label {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.Field__required {
+  color: var(--error);
+}
+
+.Field__input,
+.Field__textarea {
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  padding: 12px 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+.Field__textarea {
+  resize: vertical;
+  min-height: 160px;
+  line-height: 1.45;
+}
+
+.Field__input:focus,
+.Field__textarea:focus {
+  border-color: rgba(59, 130, 246, 0.65);
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+}
+
+.Field__input--error {
+  border-color: rgba(239, 68, 68, 0.55);
+  box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.12);
+}
+
+.Field__error {
+  font-size: 12px;
+  color: var(--error);
+}
+
+.NoteForm__actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.NoteForm__hint {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+kbd {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  font-size: 11px;
+  border: 1px solid var(--border);
+  border-bottom-width: 2px;
+  padding: 1px 6px;
+  border-radius: 8px;
+  background: rgba(17, 24, 39, 0.03);
+}
